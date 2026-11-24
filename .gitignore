@@ -15,3 +15,8 @@ dsh-bundle/
 !.claude/
 .claude/*
 !.claude/skills/
+
+# macOS/Linux native builds and Finder metadata
+native/*.dylib
+native/*.so
+.DS_Store

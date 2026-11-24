@@ -21,7 +21,8 @@ from PIL import Image, ImageOps
 
 log = logging.getLogger("ps5native")
 
-DLL_PATH = Path(__file__).parent / "native" / "ps5bridge.dll"
+import sys as _sys
+DLL_PATH = Path(__file__).parent / "native" / {"darwin": "libps5bridge.dylib", "win32": "ps5bridge.dll"}.get(_sys.platform, "libps5bridge.so")
 
 VIDEO_CB = C.CFUNCTYPE(C.c_int, C.POINTER(C.c_uint8), C.c_size_t, C.c_int32, C.c_int, C.c_void_p)
 EVENT_CB = C.CFUNCTYPE(None, C.c_int, C.c_int, C.c_char_p, C.c_void_p)
