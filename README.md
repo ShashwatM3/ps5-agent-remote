@@ -6,6 +6,8 @@ Control your PS5 from a browser or an AI agent.
 
 <sub>The web remote, driving a real console over Remote Play. Image from 2026-11-03.</sub>
 
+> **macOS:** this fork's `mac-port` branch runs on a Mac. Follow [08 macOS setup](docs/08-macos.md) instead of the Windows steps below.
+
 Connect it to your agent:
 
 ```powershell
@@ -132,6 +134,7 @@ and "PS5" are trademarks of Sony Interactive Entertainment Inc.
 | [05 Troubleshooting](docs/05-troubleshooting.md) | Black screen, console not found, linking errors |
 | [06 HTTP API](docs/06-http-api.md) | Endpoints for your own scripts |
 | [07 Building the native library](docs/07-building.md) | Compile `ps5bridge.dll` yourself |
+| [08 macOS setup](docs/08-macos.md) | Run it on a Mac from scratch (this fork) |
 
 ## License
 
